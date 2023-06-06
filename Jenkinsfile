@@ -32,7 +32,7 @@ pipeline {
                 branch "stage"
             }
             steps{
-                tomcatDeploy("ec2-user","172.31.10.100","tomcat-dev","lms")
+               echo "stage deploy here"
             }
         }
         stage('prod deploy'){
@@ -40,7 +40,7 @@ pipeline {
                 branch "main"
             }
             steps{
-                tomcatDeploy("ec2-user","172.31.10.100","tomcat-dev","lms")
+                 echo "prod deploy here"
             }
         }
 }
