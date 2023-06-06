@@ -1,4 +1,4 @@
-@Library("shruthi-libs") _
+
 pipeline {
     agent any
 
